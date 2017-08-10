@@ -15,6 +15,16 @@
 		08750C111F262AEC00B6013D /* EPEntranceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C101F262AEC00B6013D /* EPEntranceVC.m */; };
 		08750C141F262AFB00B6013D /* EPMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C131F262AFB00B6013D /* EPMainVC.m */; };
 		08750C171F262B1000B6013D /* EPDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C161F262B1000B6013D /* EPDetailsVC.m */; };
+		112408DD1F27984800CBCE27 /* EPMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C131F262AFB00B6013D /* EPMainVC.m */; };
+		112408DE1F27984800CBCE27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750BF91F262A9600B6013D /* AppDelegate.m */; };
+		112408DF1F27984800CBCE27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750BF61F262A9600B6013D /* main.m */; };
+		112408E01F27984800CBCE27 /* EPEntranceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C101F262AEC00B6013D /* EPEntranceVC.m */; };
+		112408E11F27984800CBCE27 /* EPDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08750C161F262B1000B6013D /* EPDetailsVC.m */; };
+		112408E41F27984800CBCE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08750C031F262A9700B6013D /* LaunchScreen.storyboard */; };
+		112408E51F27984800CBCE27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08750C011F262A9700B6013D /* Assets.xcassets */; };
+		112408E61F27984800CBCE27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08750BFE1F262A9700B6013D /* Main.storyboard */; };
+		112408EE1F279A1B00CBCE27 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112408ED1F279A1B00CBCE27 /* CFNetwork.framework */; };
+		112408F01F279A9A00CBCE27 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112408EF1F279A9A00CBCE27 /* calabash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,9 @@
 		08750C131F262AFB00B6013D /* EPMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPMainVC.m; sourceTree = "<group>"; };
 		08750C151F262B1000B6013D /* EPDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDetailsVC.h; sourceTree = "<group>"; };
 		08750C161F262B1000B6013D /* EPDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDetailsVC.m; sourceTree = "<group>"; };
+		112408EA1F27984800CBCE27 /* EPTestApp-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EPTestApp-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		112408ED1F279A1B00CBCE27 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		112408EF1F279A9A00CBCE27 /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +52,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112408F01F279A9A00CBCE27 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112408E21F27984800CBCE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112408EE1F279A1B00CBCE27 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +70,10 @@
 		08750BE91F262A9500B6013D = {
 			isa = PBXGroup;
 			children = (
+				112408EF1F279A9A00CBCE27 /* calabash.framework */,
 				08750BF41F262A9600B6013D /* EPTestApp */,
 				08750BF31F262A9500B6013D /* Products */,
+				112408EC1F279A1B00CBCE27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				08750BF21F262A9500B6013D /* EPTestApp.app */,
+				112408EA1F27984800CBCE27 /* EPTestApp-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +114,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		112408EC1F279A1B00CBCE27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112408ED1F279A1B00CBCE27 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +140,23 @@
 			name = EPTestApp;
 			productName = EPTestApp;
 			productReference = 08750BF21F262A9500B6013D /* EPTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		112408DB1F27984800CBCE27 /* EPTestApp-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112408E71F27984800CBCE27 /* Build configuration list for PBXNativeTarget "EPTestApp-cal" */;
+			buildPhases = (
+				112408DC1F27984800CBCE27 /* Sources */,
+				112408E21F27984800CBCE27 /* Frameworks */,
+				112408E31F27984800CBCE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EPTestApp-cal";
+			productName = EPTestApp;
+			productReference = 112408EA1F27984800CBCE27 /* EPTestApp-cal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				08750BF11F262A9500B6013D /* EPTestApp */,
+				112408DB1F27984800CBCE27 /* EPTestApp-cal */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +204,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		112408E31F27984800CBCE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112408E41F27984800CBCE27 /* LaunchScreen.storyboard in Resources */,
+				112408E51F27984800CBCE27 /* Assets.xcassets in Resources */,
+				112408E61F27984800CBCE27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -165,6 +226,18 @@
 				08750BF71F262A9600B6013D /* main.m in Sources */,
 				08750C111F262AEC00B6013D /* EPEntranceVC.m in Sources */,
 				08750C171F262B1000B6013D /* EPDetailsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112408DC1F27984800CBCE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112408DD1F27984800CBCE27 /* EPMainVC.m in Sources */,
+				112408DE1F27984800CBCE27 /* AppDelegate.m in Sources */,
+				112408DF1F27984800CBCE27 /* main.m in Sources */,
+				112408E01F27984800CBCE27 /* EPEntranceVC.m in Sources */,
+				112408E11F27984800CBCE27 /* EPDetailsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EPTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ubertesterssub.eptestapp;
@@ -300,9 +377,49 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EPTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ubertesterssub.eptestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		112408E81F27984800CBCE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EPTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ubertesterssub.eptestapp-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		112408E91F27984800CBCE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EPTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ubertesterssub.eptestapp-cal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -327,6 +444,16 @@
 				08750C0B1F262A9700B6013D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112408E71F27984800CBCE27 /* Build configuration list for PBXNativeTarget "EPTestApp-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112408E81F27984800CBCE27 /* Debug */,
+				112408E91F27984800CBCE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
