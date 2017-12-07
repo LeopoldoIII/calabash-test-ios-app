@@ -1,0 +1,61 @@
+reinstall_apps
+start_test_server_in_background
+start_test_server_in_background
+start_test_server_in_background
+query('*')
+query('UITableView')
+query('UITableView', :offset)
+query('UITableView', :contentOffset)
+query('UITableView', :contentOffset)
+quit
+start_test_server_in_background
+query('UiTableView')
+query('UiTableView')
+query('UITableView')
+query('UITableView', :contentSize)
+reg = /^.*: {(\d+), (\d+)}$/
+reg.match "NSSize: {375, 8800}"
+reg = /^.*: {(?<:width>\d+), (?<:height>\d+)}$/
+reg.match "NSSize: {375, 8800}"
+reg = /^.*: {(?<width>\d+), (?<height>\d+)}$/
+q = reg.match "NSSize: {375, 8800}"
+q[:width]
+q.to_h
+q.to_hash
+q.to_a
+q[:width]
+quit
+start_test_server_in_background
+query('UITableView')
+query('UITableView', :contentOffset)
+query('UITableView', :contentSize)
+query('UITableView', :contentSize).first[:X]
+query('UITableView', :contentSize).first[:X]
+query('UITableView', :contentSize).first
+query('UITableView', :contentOffset).first[:X]
+query('UITableView', :contentOffset).first['X']
+query('UITableView', :contentOffset).first['X'].class
+scroll('UITableView', :r)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :up)
+scroll('UITableView', :left)
+quit
+start_test_server_in_background
+query('UITableView', :contentOffset)
+nil || 'Jopa'
+quit
+Applitools::Region.new(0,0, 50, 100)
+Applitools
+Applitools::Region
+require 'eyes_core'
+Applitools::Region
+Applitools::Region.new(0,0, 50, 100)
+Applitools::Region.new(0,0, 50, 100).dup
+z = Applitools::Region.new(0,0, 50, 100)
+z.dup
+quit
