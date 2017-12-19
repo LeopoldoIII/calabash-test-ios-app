@@ -1,24 +1,27 @@
 @eyes
+@eyes_app_name "CalabashSDK(iOS)"
 Feature: Sample Feature
-
-  #Background:
-  #  Given eyes application name is "CucumberSDK(iOS)"
-  #  Then open eyes
-
   Scenario: The first screen
     When I wait
-    Then the whole screen should match a baseline
+    Then I check window
 
   Scenario: Continue link
-    Then the element "button marked:'Continue'" should match a baseline
+    Then I check element "button marked:'Continue'"
 
+  @eyes_tag "viewport window"
   Scenario: the second screen
     Given I touch the "Continue" button
     And I wait
-    Then the whole screen should match a baseline
+    Then I check viewport window
 
-  @close
+  @eyes_tag "explicit check of scrollable element"
   Scenario: the table view
     Given I touch the "Continue" button
     And I wait
-    Then the entire element "UITableView" should match a baseline
+    Then I check element "UITableView"
+
+  @eyes_tag "check window with scrollable element"
+  Scenario: window (contains scrollable)
+    Given I touch the "Continue" button
+    And I wait
+    Then I check window

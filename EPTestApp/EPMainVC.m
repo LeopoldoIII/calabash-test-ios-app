@@ -47,7 +47,7 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"EPMainCell" forIndexPath:indexPath];
-    cell.textLabel.text = @"Click me!";
+    cell.textLabel.text = [NSString stringWithFormat:@"Click me! %li", (long)indexPath.row];
     return cell;
 }
 

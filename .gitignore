@@ -66,4 +66,5 @@ iOSInjectionProject/
 tmp
 logs
 .pry-history
-
+debug_screenshots
+node_modules
