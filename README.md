@@ -10,4 +10,4 @@ To run the test:
   - <code>cd path/to/app/home</code>
   - <code>bundle install</code>
   - <code>export APPLITOOLS_API_KEY=YOUR_KEY</code>
-  - <code>bundle exec code</code>
+  - <code>bundle exec cucumber</code>
