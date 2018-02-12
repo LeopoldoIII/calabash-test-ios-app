@@ -1,22 +1,9 @@
-PATH
-  remote: ../eyes.sdk.ruby
-  specs:
-    eyes_calabash (3.13.0)
-      cucumber
-      eyes_core (= 3.13.0)
-      file_utils
-      rspec-expectations
-    eyes_core (3.13.0)
-      chunky_png (= 1.3.6)
-      faraday
-      oily_png (~> 1.2)
-      oj
-
 GEM
   remote: http://rubygems.org/
   specs:
     CFPropertyList (2.3.5)
     awesome_print (1.8.0)
+    backports (3.11.1)
     builder (3.2.3)
     calabash-cucumber (0.20.5)
       awesome_print
@@ -31,44 +18,53 @@ GEM
       slowhandcuke (~> 0.0.3)
     chunky_png (1.3.6)
     clipboard (1.1.1)
-    coderay (1.1.2)
     command_runner_ng (0.1.3)
-    cucumber (2.4.0)
+    cucumber (3.1.0)
       builder (>= 2.1.2)
-      cucumber-core (~> 1.5.0)
+      cucumber-core (~> 3.1.0)
+      cucumber-expressions (~> 5.0.4)
       cucumber-wire (~> 0.0.1)
-      diff-lcs (>= 1.1.3)
-      gherkin (~> 4.0)
+      diff-lcs (~> 1.3)
+      gherkin (~> 5.0)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.2)
-    cucumber-core (1.5.0)
-      gherkin (~> 4.0)
+    cucumber-core (3.1.0)
+      backports (>= 3.8.0)
+      cucumber-tag_expressions (~> 1.1.0)
+      gherkin (>= 5.0.0)
+    cucumber-expressions (5.0.13)
+    cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
     diff-lcs (1.3)
     edn (1.1.1)
-    faraday (0.13.1)
+    eyes_calabash (3.14.2)
+      cucumber
+      eyes_core (= 3.14.2)
+      file_utils
+      rspec-expectations
+    eyes_core (3.14.2)
+      chunky_png (= 1.3.6)
+      faraday
+      oily_png (~> 1.2)
+      oj
+    faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
     file_utils (1.1.2)
     geocoder (1.4.4)
-    gherkin (4.1.3)
+    gherkin (5.0.0)
     httpclient (2.8.3)
     i18n (0.8.6)
     json (1.8.6)
-    method_source (0.8.2)
-    multi_json (1.12.2)
+    multi_json (1.13.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
     oily_png (1.2.0)
       chunky_png (~> 1.3.1)
-    oj (3.3.5)
-    pry (0.10.4)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    rspec-expectations (3.6.0)
+    oj (3.4.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.6.0)
-    rspec-support (3.6.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
     run_loop (2.5.4)
       CFPropertyList (~> 2.2)
       awesome_print (~> 1.2)
@@ -77,7 +73,6 @@ GEM
       i18n (>= 0.7.0, < 1.0)
       json (~> 1.8)
       thor (>= 0.18.1, < 1.0)
-    slop (3.6.0)
     slowhandcuke (0.0.3)
       cucumber
     thor (0.20.0)
@@ -87,9 +82,8 @@ PLATFORMS
 
 DEPENDENCIES
   calabash-cucumber
-  eyes_calabash!
-  eyes_core!
-  pry
+  eyes_calabash
+  eyes_core
 
 BUNDLED WITH
    1.15.4
